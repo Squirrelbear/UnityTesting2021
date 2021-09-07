@@ -31,6 +31,11 @@ public class RollerBehaviour : MonoBehaviour
         return (rollCurrent - rollRotationMin) / (rollRotationMax - rollRotationMin);
     }
 
+    public void toggleFreeze()
+    {
+        isFrozen = !isFrozen;
+    }
+
     private void Update()
     {
         /*if(!isRolling)
