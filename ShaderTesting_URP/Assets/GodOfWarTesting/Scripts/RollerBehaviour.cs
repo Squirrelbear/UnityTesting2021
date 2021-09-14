@@ -1,9 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 public class RollerBehaviour : MonoBehaviour
 {
+    public event Action OnFreezeEvent;
+    public event Action OnUnFreezeEvent;
+
     [SerializeField]
     private WalkOnButtonBehaviour linkedButton;
     [SerializeField]
@@ -34,6 +38,14 @@ public class RollerBehaviour : MonoBehaviour
     public void toggleFreeze()
     {
         isFrozen = !isFrozen;
+        if(isFrozen)
+        {
+            OnFreezeEvent?.Invoke();
+        } 
+        else
+        {
+            OnUnFreezeEvent?.Invoke();
+        }
     }
 
     private void Update()

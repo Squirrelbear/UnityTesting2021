@@ -36,7 +36,7 @@ public class WalkOnButtonBehaviour : MonoBehaviour
     {
         if(other.tag == "Player")
         {
-            Debug.Log("ON");
+            //Debug.Log("ON");
             OnButtonEnteredEvent?.Invoke();
         }    
     }
@@ -45,7 +45,7 @@ public class WalkOnButtonBehaviour : MonoBehaviour
     {
         if (other.tag == "Player")
         {
-            Debug.Log("OFF");
+            //Debug.Log("OFF");
             OnButtonExitedEvent?.Invoke();
         }
     }
