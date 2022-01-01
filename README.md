@@ -1,6 +1,7 @@
 # Unity Testing 2021: God of War Demo
 
 The Unity Testing folder contains an older version before upgrading to the URP to add VFX. The latest version of the project is contained in ShaderTesting_URP. The content is a work in progress but shows a vertical slice of the content that may be interesting for others to view.
+
 This project contains a small selection of partial work in Unity to test some newer frameworks and become more familiar with existing frameworks. The primary example in this demo is a simple recreation of a mechanic from God of War. In the God of War game, the player would interact with an object to make something move and then throw their axe at the rotating part to cause the motion, therefore, holding it in place. Then the player could move to a location that was otherwise unavailable before recalling their axe to complete the sequence.
 
 The demo makes use of the following features:
